@@ -6,8 +6,6 @@ using UnityEngine.Video;
 public class PlayVideoTrigger : MonoBehaviour
 {
 
-    public VideoPlayer VideoPlayer; // PlayVideo
-    public string playerTag = "Player"; // RAY TAG
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,7 +20,6 @@ public class PlayVideoTrigger : MonoBehaviour
     private void PlayVideo()
     {
         // Play Video
-            VideoPlayer.enabled = true;
     }
 }
 
