@@ -6,6 +6,8 @@ using UnityEngine.Video;
 public class PlayVideoTrigger : MonoBehaviour
 {
 
+    public GameObject VideoRenderObj;
+    public string playerTag = "Player";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,9 +19,11 @@ public class PlayVideoTrigger : MonoBehaviour
         }
     }
 
+    [ContextMenu("Play Video")]
     private void PlayVideo()
     {
         // Play Video
+        VideoRenderObj.SetActive(true);
     }
 }
 
