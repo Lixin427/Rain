@@ -39,8 +39,7 @@ public class Ray : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, jumpForce);
         }
 
-        // Set animation
-        anim.SetBool("Walk", horizontalInput != 0);
+        anim.SetBool("Move", horizontalInput != 0);
     }
 
     // Check if the player is grounded
